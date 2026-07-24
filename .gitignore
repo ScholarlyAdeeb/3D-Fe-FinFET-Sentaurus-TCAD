@@ -1,0 +1,27 @@
+# Ignore simulation results and meshes
+*.tdr
+*.plt
+*.sav
+*.xtr
+
+# Ignore node-specific execution files
+n[12-20]*
+pp[12-20]*
+*.job
+*.sta
+*.err
+*.out
+
+# Ignore system and tool logs
+flex*.log
+cmlog.txt
+glog.txt
+SVisualTcl.log*
+*.log
+
+# Ignore transient project metadata
+.history
+.status
+.database
+.organization
+gtree.dat.backup

@@ -1,0 +1,25 @@
+#define ParFileDir .
+
+Material="Insulator1" {
+    Ferroelectric {
+        * Format: (X, Y, Z) components
+        * Saturation Polarization [C/cm2] (~30 uC/cm2)
+        P_s = (30e-6, 30e-6, 30e-6)
+        
+        * Remanent Polarization [C/cm2] (~25 uC/cm2)
+        P_r = (25e-6, 25e-6, 25e-6)
+        
+        * Coercive Field [V/cm] (~1 MV/cm)
+        F_c = (1.0e6, 1.0e6, 1.0e6)
+        
+        * Relaxation times (0 means polarization follows the applied field instantaneously)
+        tau_E = (0.0, 0.0, 0.0)
+        tau_P = (0.0, 0.0, 0.0)
+        k_n   = (0.0, 0.0, 0.0)
+    }
+    Epsilon {
+        * Relative permittivity of the background HZO lattice
+        epsilon = 25.0
+    }
+}
+
